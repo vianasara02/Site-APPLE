@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font/css/all.css">
+  <link rel="shortcut icon" type="x-icon" href="images/icon.jpg">
+  <link rel="stylesheet" type="text/css" href="css/styles2.css">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="fonts/fontawesome-free-6.5.2-web/css/all.css">
+
+  <title> APPLE </title>
+
+  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-apple"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+        <ul class="navbar-nav" style="text-align: center;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">LOJA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin: 0 20px;">Mec</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin: 0 20px;">Ipad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin: 0 20px;">Iphone</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin: 0 20px;">AirPods</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin: 0 20px;">Tv e Casa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin: 0 20px;">Entretenimento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin: 0 20px;">Acessório</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="margin: 0 20px;">Suportes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-nav ms-auto">
+      <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+      <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </nav>
+
+  </div>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/carrocel2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/carrocel1.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+      </div> 
+      <div class="col-sm-8">
+        <h2 class="title">Mais Procurados</h2>
+      </div>  
+      <div class="col-sm-2">
+      </div> 
+    </div> 
+  </div> 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h3>Filtro de Produto e Preço</h3>
+        <!-- Formulário de filtro -->
+        <form action="processar_filtro.php" method="GET">
+          <div class="form-group">
+            <label for="produto">Nome do Produto:</label>
+            <input type="text" class="form-control" id="produto" name="produto">
+          </div>
+          <div class="form-group">
+            <label>Faixa de Preço:</label><br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="preco_abaixo_50" name="preco_abaixo_50"
+                value="preco_abaixo_50">
+              <label class="form-check-label" for="preco_abaixo_50">Abaixo de R$50</label>
+            </div>
+            <div class="form-check">
+              <input class="" type="checkbox" id="preco_50_100" name="preco_50_100" value="preco_50_100">
+              <label class="form-check-label" for="preco_50_100">R$50 - R$100</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="preco_acima_100" name="preco_acima_100"
+                value="preco_acima_100">
+              <label class="form-check-label" for="preco_acima_100">Acima de R$100</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Filtrar</button>
+        </form>
+      </div>
+
+      <div class="col col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/iphone15.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Apple IPhone 15 Pro Max </h5>
+            <p class="card-text">Tela Super Retina XDR de 6,1 polegadas nota de rodapé ¹ com
+              ProMotion.
+              Design robusto e leve em titânio com botão de Ação.</p>
+            <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Saiba mais
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Apple IPhone 15 Pro Max</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <img src="images/iphone15.jpeg" alt="">
+                          </div>
+                          <div class="col-lg">
+                            <div class="d-grid gap">
+                              <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Apple IPhone 15 128GB Cinza 6,1" 48MP iOS 5G</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Vendido e entregue por
+                                    VianaTransport</h6>
+                                  <hr>
+                                  <p class="card-text"> R$ 7.299,00 - R$ 4.999,00
+                                    no Pix
+                                    (10% de desconto)
+                                    ou R$ 5.554,44 em 10x de R$ 555,44 sem juros</p>
+                                  <hr>
+                                  <h6>Outras Cores</h6>
+                                  <button type="button" class="btn btn-warning">amarelo</button>
+                                  <button type="button" class="btn btn-dark">preto</button>
+                                  <button type="button" class="btn btn-success">Verde</button>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping">CEP</span>
+                                  <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP"
+                                    aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="btn btn-primary" type="button">Comprar Agora</button>
+                                <button class="btn btn-primary" type="button">Adicionar a Sacola</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/ipad.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">IPad PRO</h5>
+            <p class="card-text">Criado pela Apple para complementar o iPhone 15, a capa de
+              silicone com MagSafe oferece muito charme e proteção ao seu aparelho.
+              Desempenho poderoso em um design fino e leve.
+              Todo tela e cheio de cores para você usar no seu dia a dia. </p>
+            <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+              Saiba mais
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel1">IPad PRO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <img src="images/ipad.jpeg" alt="">
+                          </div>
+                          <div class="col-lg">
+                            <div class="d-grid gap">
+                              <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">IPad PRO </h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Vendido e entregue por
+                                    VianaTransport</h6>
+                                  <hr>
+                                  <p class="card-text"> R$ 7.299,00 - R$ 4.999,00
+                                    no Pix
+                                    (10% de desconto)
+                                    ou R$ 5.554,44 em 10x de R$ 555,44 sem juros</p>
+                                  <hr>
+                                  <h6>Outras Cores</h6>
+                                  <button type="button" class="btn btn-warning">Rosa</button>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping">CEP</span>
+                                  <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP"
+                                    aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="btn btn-primary" type="button">Comprar Agora</button>
+                                <button class="btn btn-primary" type="button">Adicionar a Sacola</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/capa.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Capa de silicone com MagSafe para iPhone 15 – Rosa</h5>
+            <p class="card-text"> Criada pela Apple para complementar o iPhone 15, a capa de
+              silicone com MagSafe oferece muito charme e proteção ao seu aparelho.</p>
+           <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+              Saiba mais
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel2">Capa de silicone com MagSafe para iPhone 15 – Rosa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <img src="images/capa.jpeg" alt="">
+                          </div>
+                          <div class="col-lg">
+                            <div class="d-grid gap">
+                              <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Capa de silicone com MagSafe para iPhone 15 – Rosa</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Vendido e entregue por
+                                    VianaTransport</h6>
+                                  <hr>
+                                  <p class="card-text"> R$ 7.299,00 - R$ 4.999,00
+                                    no Pix
+                                    (10% de desconto)
+                                    ou R$ 5.554,44 em 10x de R$ 555,44 sem juros</p>
+                                  <hr>
+                                  <h6>Outras Cores</h6>
+                                  <button type="button" class="btn btn-warning">Rosa</button>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping">CEP</span>
+                                  <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP"
+                                    aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="btn btn-primary" type="button">Comprar Agora</button>
+                                <button class="btn btn-primary" type="button">Adicionar a Sacola</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-3">
+        <div class="" id="video">
+          <h5> Apple Watch Series 9</h5>
+          <div class="ratio ratio-4x3">
+            <iframe src="https://www.youtube.com/embed/Nvb_Kta7v6U" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/relogio.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Apple Watch Series 9</h5>
+            <p class="card-text">Tela Retina Sempre Ativa mais brilhante, com cristal frontal durável e resistente a
+              rachaduras. Com visualizações e métricas avançadas de exercício.</p>
+            <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+              Saiba mais
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel3" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel3">Apple Watch Series 9</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <img src="images/relogio.jpeg" alt="">
+                          </div>
+                          <div class="col-lg">
+                            <div class="d-grid gap">
+                              <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Apple Watch Series 9</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Vendido e entregue por
+                                    VianaTransport</h6>
+                                  <hr>
+                                  <p class="card-text"> R$ 7.299,00 - R$ 4.999,00
+                                    no Pix
+                                    (10% de desconto)
+                                    ou R$ 5.554,44 em 10x de R$ 555,44 sem juros</p>
+                                  <hr>
+                                  <h6>Outras Cores</h6>
+                                  <button type="button" class="btn btn-warning">Amarelo</button>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping">CEP</span>
+                                  <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP"
+                                    aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="btn btn-primary" type="button">Comprar Agora</button>
+                                <button class="btn btn-primary" type="button">Adicionar a Sacola</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/relogio2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Apple Watch Ultra 2</h5>
+            <p class="card-text">A caixa de titânio de 49 mm resistente com botão de Ação configurável atinge o
+              equilíbrio entre peso, robustez e resistência à corrosão.</p>
+            <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+              Saiba mais
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel4" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel4"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <img src="images/relogio2.jpeg" alt="">
+                          </div>
+                          <div class="col-lg">
+                            <div class="d-grid gap">
+                              <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Apple Watch Ultra 2</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Vendido e entregue por
+                                    VianaTransport</h6>
+                                  <hr>
+                                  <p class="card-text"> R$ 7.299,00 - R$ 4.999,00
+                                    no Pix
+                                    (10% de desconto)
+                                    ou R$ 5.554,44 em 10x de R$ 555,44 sem juros</p>
+                                  <hr>
+                                  <h6>Outras Cores</h6>
+                                  <button type="button" class="btn btn-warning">Laranja</button>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping">CEP</span>
+                                  <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP"
+                                    aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="btn btn-primary" type="button">Comprar Agora</button>
+                                <button class="btn btn-primary" type="button">Adicionar a Sacola</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-sm-3">
+        <div class="card" style="width: 18rem;">
+          <img src="images/relogio3.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Apple Watch SE</h5>
+            <p class="card-text">Com os modelos GPS + Celular, você pode fazer ligações e enviar mensagens mesmo sem
+              seu iPhone por perto.</p>
+            <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+              Saiba mais
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel5" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel5">Apple Watch SE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <img src="images/relogio3.jpeg" alt= "">
+                          </div>
+                          <div class="col-lg">
+                            <div class="d-grid gap">
+                              <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Apple Watch SE</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Vendido e entregue por
+                                    VianaTransport</h6>
+                                  <hr>
+                                  <p class="card-text"> R$ 7.299,00 - R$ 4.999,00
+                                    no Pix
+                                    (10% de desconto)
+                                    ou R$ 5.554,44 em 10x de R$ 555,44 sem juros</p>
+                                  <hr>
+                                  <h6>Outras Cores</h6>
+                                  <button type="button" class="btn btn-warning">Rosa</button>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping">CEP</span>
+                                  <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP"
+                                    aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="btn btn-primary" type="button">Comprar Agora</button>
+                                <button class="btn btn-primary" type="button">Adicionar a Sacola</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-3">
+        <div class="" id="video2">
+          <h5> Introducing iPhone 15 Pro</h5>
+          <div class="ratio ratio-4x3">
+            <iframe src="https://www.youtube.com/embed/xqyUdNxWazA" title="YouTube video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 bloco">
+        <div class="card" style="width: 18rem;">
+          <img src="images/gif.gif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Acessórios e TV</h5>
+            <p class="card-text">Tudo o que você precisar. Aproveite!
+              O som mais rápido, equalizando o áudio enquanto você ouve, além de
+              oferecer cancelamento de ruído mais inteligente.
+            </p>
+           <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+              Saiba mais
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel6" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel6">Acessórios e TV</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <img src="images/gif.gif" alt="">
+                          </div>
+                          <div class="col-lg">
+                            <div class="d-grid gap">
+                              <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Acessórios e TV</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Vendido e entregue por
+                                    VianaTransport</h6>
+                                  <hr>
+                                  <p class="card-text"> R$ 7.299,00 - R$ 4.999,00
+                                    no Pix
+                                    (10% de desconto)
+                                    ou R$ 5.554,44 em 10x de R$ 555,44 sem juros</p>
+                                  <hr>
+                                </div>
+                                </div>
+                              <div class="modal-footer">
+                                <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping">CEP</span>
+                                  <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP"
+                                    aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="btn btn-primary" type="button">Comprar Agora</button>
+                                <button class="btn btn-primary" type="button">Adicionar a Sacola</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 bloco">
+        <div class="card" style="width: 18rem;">
+          <img src="images/fone1.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AirPods Max</h5>
+            <p class="card-text">Os AirPods Max combinam áudio de alta fidelidade e cancelamento de ruído
+              líder do setor para oferecer uma experiência sonora sem igual. Ao combinar o Cancelamento
+              Ativo de Ruído com o modo Ambiente sempre que você precisar </p>
+            <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+              Saiba mais
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel7" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel7">AirPods Max</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <img src="images/fone1.jpeg" alt="">
+                          </div>
+                          <div class="col-lg">
+                            <div class="d-grid gap">
+                              <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">AirPods Max</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Vendido e entregue por
+                                    VianaTransport</h6>
+                                  <hr>
+                                  <p class="card-text"> R$ 7.299,00 - R$ 4.999,00
+                                    no Pix
+                                    (10% de desconto)
+                                    ou R$ 5.554,44 em 10x de R$ 555,44 sem juros</p>
+                                  <hr>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping">CEP</span>
+                                  <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP"
+                                    aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="btn btn-primary" type="button">Comprar Agora</button>
+                                <button class="btn btn-primary" type="button">Adicionar a Sacola</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 bloco">
+        <div class="card" style="width: 18rem;">
+          <img src="images/fone2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AirPods Pro</h5>
+            <p class="card-text">Os AirPods Pro com chip H2 agora vêm com Áudio Adaptativo1, que prioriza
+              automaticamente os sons que merecem sua atenção em diferentes situações.</p>
+           <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+              Saiba mais
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel8" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel8">AirPods Pro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container">
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <img src="images/fone2.png" alt="">
+                          </div>
+                          <div class="col-lg">
+                            <div class="d-grid gap">
+                              <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">AirPods Pro</h5>
+                                  <h6 class="card-subtitle mb-2 text-body-secondary">Vendido e entregue por
+                                    VianaTransport</h6>
+                                  <hr>
+                                  <p class="card-text"> R$ 7.299,00 - R$ 4.999,00
+                                    no Pix
+                                    (10% de desconto)
+                                    ou R$ 5.554,44 em 10x de R$ 555,44 sem juros</p>
+                                  <hr>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <div class="input-group flex-nowrap">
+                                  <span class="input-group-text" id="addon-wrapping">CEP</span>
+                                  <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP"
+                                    aria-describedby="addon-wrapping">
+                                </div>
+                                <button class="btn btn-primary" type="button">Comprar Agora</button>
+                                <button class="btn btn-primary" type="button">Adicionar a Sacola</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-12">
+        <div id="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61429.23852924608!2d-47.96114237832029!3d-15.78668099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b02a101f8c1%3A0xc069261dcf575d8e!2s
+iPlace%20-%20Bras%C3%ADlia%20Shopping!5e0!3m2!1sen!2sbr!4v1714140831222!5m2!1sen!2sbr" width="1280" height="450"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col col-sm-2">
+      </div>
+      <div class="col col-sm-8">
+        <h2>Entre em Contato Conosco</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input type="text" class="form-control" id="name" placeholder="Digite seu Nome">
+          </div>
+          <div class="form-group">
+            <label for="email">Endereço de E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Deixe sua Mensagem</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Escreva sua Mensagem"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+      </div>
+
+    </div>
+    <div class="col col-sm-2">
+    </div>
+  </div>
+  </div>
+
+  <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title></title>
+</head>
+
+<body>
+  <h1></h1>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
