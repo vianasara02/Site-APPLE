@@ -1,0 +1,1 @@
+Desenvolvi um site inspirado na estética da Apple para um projeto acadêmico, utilizando o framework Bootstrap como base. Embora ainda não esteja completamente finalizado, estou empenhado em aprimorar e refinar o design e a funcionalidade para alcançar um resultado mais próximo da qualidade da marca. Estou aberto a feedback e sugestões para continuar melhorando meu trabalho.
